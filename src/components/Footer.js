@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import pdf from '../resume/cv200923.pdf';
+import pdf from '../resume/sot24092023.pdf';
 
 function Footer() {
   const [showPdfModal, setShowPdfModal] = useState(false);
