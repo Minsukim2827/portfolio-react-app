@@ -1,6 +1,6 @@
 import React from 'react';
 import snapvote from '../img/snapvote.png';
-import portfolioV3 from '../img/portfolioV3.png';
+import portfolio from '../img/portfolio.png';
 import spotifyDiscordBot from '../img/spotifyDiscordBot.png';
 
 function Work() {
@@ -13,7 +13,7 @@ function Work() {
           <img src={snapvote} alt="" className="portfolio__img" />
         </a>
         <a href="#" className="portfolio__item">
-          <img src={portfolioV3} alt="" className="portfolio__img" />
+          <img src={portfolio} alt="" className="portfolio__img" />
         </a>
         <a href="#" className="portfolio__item">
           <img src={spotifyDiscordBot} alt="" className="portfolio__img" />
