@@ -434,8 +434,8 @@ header {
     right: 0;
     /* background-color: rgba(0, 0, 0, 0.7); */
     color: white;
-    opacity: 0 !important;
-    transition: opacity 1s ease !important;
+    opacity: 0;
+    transition: opacity 1s ease 
   }
   
   .portfolio__btn {
@@ -448,6 +448,9 @@ header {
     text-decoration: none; /* Remove underline */
     border-radius: 5px;     /* Add slight curve */
     transition: all 0.2s ease;
+    font-weight: 700;
+        font-size: calc(1rem + 0.5vw);  /* Scale the font-size */
+    padding: calc(10px + 0.5vw);   /* Scale the padding */
   }
   
   .portfolio__item {
@@ -459,12 +462,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 1 !important;
+    opacity: 1 
 }
 
 .portfolio__btn:hover {
   background-color: #035784; 
 }
+
+
 
 /* footer */
 
@@ -499,6 +504,7 @@ header {
     list-style: none;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 2em 0 0;
     padding: 0;
 }
@@ -510,6 +516,23 @@ header {
 .social-list__link {
     padding: .5em;
 }
+
+.pdf-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pdf-modal__iframe {
+    width: 80%;
+    height: 80%;
+  }
 
 /* fade in animation at the start */
 

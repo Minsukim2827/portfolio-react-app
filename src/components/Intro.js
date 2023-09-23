@@ -9,6 +9,7 @@ function Intro() {
       </h1>
       <p className="section__subtitle section__subtitle--intro">Software Developer</p>
       <img src={photo} alt="a picture of Minsu Kim" className="intro__img" />
+      
     </section>
   );
 }
