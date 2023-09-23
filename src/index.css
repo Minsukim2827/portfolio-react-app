@@ -26,6 +26,7 @@
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
 
     --tint: rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.8s ease-in-out;
 }
 
 @media (min-width: 800px) {
@@ -403,6 +404,7 @@ header {
     background: none;
     overflow: hidden;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    
 }
 
 .portfolio__img {
@@ -424,6 +426,45 @@ header {
     opacity: .5;
 }
 
+.portfolio__btn-container {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    color: white;
+    opacity: 0 !important;
+    transition: opacity 1s ease !important;
+  }
+  
+  .portfolio__btn {
+    padding: 10px;
+    margin: 5px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px;     /* Add slight curve */
+    transition: all 0.2s ease;
+  }
+  
+  .portfolio__item {
+    position: relative; /* New line */
+    /* ... (existing styles) */
+  }
+  
+  .portfolio__item:hover .portfolio__btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1 !important;
+}
+
+.portfolio__btn:hover {
+  background-color: #035784; 
+}
 
 /* footer */
 
@@ -469,3 +510,15 @@ header {
 .social-list__link {
     padding: .5em;
 }
+
+/* fade in animation at the start */
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
