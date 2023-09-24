@@ -1,5 +1,5 @@
 import React from 'react';
-import pdf from '../resume/cv240923sot.pdf';
+import pdf from '../resume/cv240923.pdf';
 
 function Footer() {
   return (
