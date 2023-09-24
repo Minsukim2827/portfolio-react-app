@@ -257,6 +257,7 @@ header {
 
 .intro__img {
     box-shadow: var(--bs);
+    z-index: 5;
 }
 
 .section__subtitle--intro {
@@ -351,6 +352,7 @@ header {
 
 .about-me__img {
     box-shadow: var(--bs);
+    z-index: 5;
 }
 
 @media (min-width: 600px) {
@@ -527,6 +529,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
   }
   
   .pdf-modal__iframe {

@@ -1,28 +1,31 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function Header() {
+  const [navOpen, setNavOpen] = useState(false);
+
   useEffect(() => {
-    const navToggle = document.querySelector('.nav-toggle');
-    const navLinks = document.querySelectorAll('.nav__link')
+    if (navOpen) {
+      document.body.classList.add('nav-open');
+    } else {
+      document.body.classList.remove('nav-open');
+    }
 
-    navToggle.addEventListener('click', () => {
-      document.body.classList.toggle('nav-open');
-    });
+    const navLinks = document.querySelectorAll('.nav__link');
 
-    navLinks.forEach(link => {
+    navLinks.forEach((link) => {
       link.addEventListener('click', () => {
-        document.body.classList.remove('nav-open');
-      })
-    })
-  }, []);
+        setNavOpen(false);
+      });
+    });
+  }, [navOpen]);
 
   return (
     <header>
       <div className="logo" id="devminsu">
         &lt;devMinsu&gt;
       </div>
-      <button className="nav-toggle" aria-label="toggle navigation">
-        <span className="hamburger"></span>
+      <button onClick={() => setNavOpen(!navOpen)} className="nav-toggle" aria-label="toggle navigation">
+        <span className={`hamburger ${navOpen ? 'nav-open' : ''}`}></span>
       </button>
       <nav className="nav">
         <ul className="nav__list">
