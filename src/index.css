@@ -513,29 +513,21 @@ header {
 
 .social-list__item {
     margin: 0 .5em;
+    display: flex;
+    align-items: center;
 }
 
 .social-list__link {
     padding: .5em;
 }
 
-.pdf-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
+.resume-btn {
+    color: black !important;
     display: flex;
-    justify-content: center;
     align-items: center;
-    z-index: 10;
-  }
-  
-  .pdf-modal__iframe {
-    width: 80%;
-    height: 80%;
-  }
+}
+
+
 
 /* fade in animation at the start */
 
