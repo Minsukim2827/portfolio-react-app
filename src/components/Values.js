@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Services() {
+function Values() {
   return (
     <section className="my-services" id="services">
       <h2 className="section__title section__title--services">My values</h2>
@@ -23,4 +23,4 @@ function Services() {
   );
 }
 
-export default Services;
+export default Values;
