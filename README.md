@@ -3,7 +3,7 @@
 ### Overview
 A portfolio website built with React, showcasing skills, values, and projects.
 
-[Live Website](https://main.d27iti8adrqv7z.amplifyapp.com)
+[Live Website](https://www.min-su.me/)
 
 ### Features
 
@@ -15,3 +15,4 @@ A portfolio website built with React, showcasing skills, values, and projects.
 ### Tech Stack
 - React
 - AWS Amplify
+- AWS Route 53
