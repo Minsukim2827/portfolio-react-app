@@ -17,7 +17,7 @@ function Footer() {
           </a>
         </li>
         <li className="social-list__item">
-          <a href={pdf} target="_blank" rel="noopener noreferrer" className="btn resume-btn">
+          <a href={pdf} target="_blank" rel="noopener noreferrer" download className="btn resume-btn">
             Resume
           </a>
         </li>
