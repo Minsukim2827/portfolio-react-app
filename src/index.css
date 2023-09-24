@@ -248,6 +248,36 @@ header {
 .hamburger::before { top: 6px; }
 .hamburger::after { bottom: 6px; }
 
+/* Hide hamburger menu when screen width is 600px and above */
+@media (min-width: 900px) {
+    .nav-toggle {
+      display: none;
+    }
+
+    .nav__link {
+        color: inherit;
+        font-weight: var(--fw-bold);
+        font-size: var(--fs-h3);
+        text-decoration: none;
+    }
+  
+    .nav {
+      position: relative;
+      background: none;
+      color: inherit;
+      transform: none;
+    }
+  
+    .nav__list {
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+  
+    .nav__item {
+      margin-left: 1em;
+    }
+  }
+  
 
 /*  Intro section  */
 
@@ -471,6 +501,19 @@ header {
   background-color: #035784; 
 }
 
+@media (max-width: 600px) {
+    .portfolio {
+      flex-direction: column;
+    }
+
+    .portfolio__btn-container {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+      }
+}
 
 
 /* footer */
