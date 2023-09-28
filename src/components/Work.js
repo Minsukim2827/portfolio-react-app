@@ -26,7 +26,7 @@ function Work() {
         <div className="portfolio__item">
           <img src={portfolio} alt="" className="portfolio__img" />
           <div className="portfolio__btn-container">
-            <a href="https://main.d27iti8adrqv7z.amplifyapp.com/" className="portfolio__btn">Website</a>
+            <a href="https://www.min-su.me/" className="portfolio__btn">Website</a>
             <a href="https://github.com/Minsukim2827/portfolio-react-app" className="portfolio__btn">Github</a>
           </div>
         </div>
